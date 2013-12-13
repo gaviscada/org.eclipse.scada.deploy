@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <feature url="features/org.eclipse.scada.deploy_0.1.0.qualifier.jar" id="org.eclipse.scada.deploy" version="0.1.0.qualifier">
-      <category name="org.eclipse.scada.deploy.category"/>
+      <category name="org.eclipse.scada.deploy"/>
    </feature>
    <feature url="features/org.eclipse.scada.deploy.sdk_0.1.0.qualifier.jar" id="org.eclipse.scada.deploy.sdk" version="0.1.0.qualifier">
-      <category name="org.eclipse.scada.deploy.sdk.category"/>
+      <category name="org.eclipse.scada.deploy"/>
    </feature>
-   <category-def name="org.eclipse.scada.deploy.category" label="Eclipse SCADA Deploy Modules (Incubation)">
+   <category-def name="org.eclipse.scada.deploy" label="Eclipse SCADA – Deploy Features (Incubation)">
       <description>
-         The deploy modules of the Eclipse SCADA system.
-      </description>
-   </category-def>
-   <category-def name="org.eclipse.scada.deploy.sdk.category" label="Eclipse SCADA Deploy Modules SDK (Incubation)">
-      <description>
-         Binaries and sources of the Eclipse SCADA deploy modules.
+         Deploy features
       </description>
    </category-def>
 </site>
