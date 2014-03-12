@@ -1,39 +1,43 @@
 ﻿<?xml version="1.0"?>
+
+<?include $(sys.CURRENTDIR)\Include.wxi?>
+
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 	<Product Id="*"
-		Name="Eclipse SCADA Admin Client"
+		Name="$(var.ProductName)"
 		Language="1033"
-		Version="0.1.0.0"
+		Version="0.1.0.$(var.BuildNumber)"
 		UpgradeCode="162FFF07-FB32-467C-8D74-7DF670609E3C"
 		Manufacturer="Eclipse SCADA Project">
-		<Package Description="#Description"
-			Comments="Comments"
-			InstallerVersion="200"
+		
+		<Package Description="The Eclipse SCADA Admin Client"
+			InstallerVersion="300"
+	        Manufacturer="Eclipse SCADA Project"        
+			InstallScope="perMachine"
+		    InstallPrivileges="elevated"
 			Compressed="yes"/>
-		<!--
-			Source media for the installation. 
- 			Specifies a single cab file to be embedded in the installer's .msi. 
-		-->
+		
+		<!-- the setup icon -->
+		<Icon Id="icon.ico" SourceFile="resources\icon.ico"/>
+		<Property Id="ARPPRODUCTICON" Value="icon.ico" />
+		
+		<MajorUpgrade
+			AllowDowngrades="yes"/>
+	
+		<!-- Installation directory and files are defined in Files.wxs -->
+		<Directory Id="TARGETDIR" Name="SourceDir">
+		</Directory>
+		
 		<Media Id="1" Cabinet="contents.cab" EmbedCab="yes" CompressionLevel="high"/>
 		
-		<!-- Installation directory and files are defined in Files.wxs -->
-		<Directory Id="TARGETDIR" Name="SourceDir"/>
-		
 		<Feature Id="Complete"
-		         Title="Eclipse SCADA Admin Client"
-		         Description="The Eclipse SCADA Admin Client"
+		         Title="$(var.ProductName)"
+		         Description="The $(var.ProductName)"
 		         Level="1">
-		         <ComponentRef Id="MyComponent"/>
+		         <ComponentRef Id="MainComponent"/>
+				 <ComponentRef Id="ApplicationShortcut"/>
+				 <ComponentGroupRef Id="ScanComponent"/>
 		</Feature>
-		
-		<!-- 
-			Using the Wix UI library
- 
-			WixUI_InstallDir does not allow the user to choose 
-			features but adds a dialog to let the user choose a 
-			directory where the product will be installed
-		-->
-		<Property Id="WIXUI_INSTALLDIR">INSTALLDIR</Property>
-		<UIRef Id="WixUI_InstallDir"/>
+	
 	</Product>
 </Wix>

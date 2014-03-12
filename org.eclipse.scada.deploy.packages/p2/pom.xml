@@ -15,11 +15,12 @@
 	<packaging>pom</packaging>
 
 	<description>
-		Eclipse SCADA base package
+		Eclipse SCADA P2 base package
 	</description>
 
 	<properties>
 		<srcBase>${baseDir}/../../src</srcBase>
+		<srcBase.rpm>${basedir}/../src</srcBase.rpm>
 	</properties>
 
 	<build>
@@ -27,7 +28,6 @@
 			<plugin>
 				<artifactId>jdeb</artifactId>
 				<groupId>org.vafer</groupId>
-				<version>1.0.1</version>
 
 				<executions>
 					<execution>
@@ -62,5 +62,71 @@
 
 		</plugins>
 	</build>
+
+	<profiles>
+		<profile>
+			<id>rpm</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>rpm-maven-plugin</artifactId>
+
+						<configuration>
+							<copyright>EPL</copyright>
+							<distribution>Eclipse SCADA %{version} (Incubation)</distribution>
+							<group>System Environment/Base</group>
+							<changelogFile>rpm/changelog</changelogFile>
+							<requires>
+								<require>org.eclipse.scada &gt;= %{version}</require>
+								<require>org.eclipse.scada.deploy.p2director-incubation</require>
+							</requires>
+							
+							<defaultUsername>root</defaultUsername>
+							<defaultGroupname>root</defaultGroupname>
+							
+						</configuration>
+
+						<executions>
+							<execution>
+								<id>generate-rpm</id>
+								<goals>
+									<goal>rpm</goal>
+								</goals>
+								<phase>compile</phase>
+								<configuration>
+									<mappings>
+										<mapping>
+											<directory>/usr/share/eclipsescada/profiles</directory>
+											<filemode>0755</filemode>
+										</mapping>
+										<mapping>
+											<directory>/usr/share/eclipsescada/p2</directory>
+											<filemode>0755</filemode>
+										</mapping>
+										<mapping>
+											<directory>/usr/bin</directory>
+											<directoryIncluded>false</directoryIncluded>
+											<username>root</username>
+											<groupname>root</groupname>
+											<filemode>0755</filemode>
+											<sources>
+												<source>
+													<location>${srcBase.rpm}/bin</location>
+													<includes>
+														<include>p2.*</include>
+													</includes>
+												</source>
+											</sources>
+										</mapping>
+									</mappings>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>

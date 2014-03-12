@@ -28,14 +28,20 @@
     <Optimize>True</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <WixExtension Include="WixUIExtension.dll" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="x86.wxs" />
+    <Compile Include="x64.wxs" />
     <Compile Include="Files.wxs" />
+    <Compile Include="scan.wxs" />
     <Compile Include="Setup.wxs" />
+    <Compile Include="Include.wxi" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="license.rtf" />
+    <None Include="heat.xsl" />
+    <None Include="resources\icon.ico" />
+    <None Include="resources\license.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resources" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
 </Project>
