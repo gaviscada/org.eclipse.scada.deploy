@@ -1,88 +1,97 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.eclipse.scada.releng</groupId>
-    <artifactId>superParent</artifactId>
-    <version>0.1.0.M4</version>
-  </parent>
-  <groupId>org.eclipse.scada.deploy</groupId>
-  <artifactId>org.eclipse.scada.deploy-parent</artifactId>
-  <version>0.1.0.M4</version>
-  <packaging>pom</packaging>
-  <modules>
-    <module>../org.eclipse.scada.deploy-p2</module>
-    <module>../org.eclipse.scada.deploy.feature</module>
-    <module>../org.eclipse.scada.deploy.sdk.feature</module>
-    <module>../org.eclipse.scada.deploy.console.feature</module>
-    <module>../org.eclipse.scada.deploy.logback.feature</module>
-    <module>../org.eclipse.scada.deploy.packages</module>
-  </modules>
-  <properties>
-    <tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/scada/org.eclipse.scada.deploy.git</tycho.scmUrl>
-  </properties>
-  <repositories>
-    <repository>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>repo.eclipse.scada.org</id>
-      <name>Eclipse SCADA Repository</name>
-      <url>https://repo.eclipse.org/content/groups/eclipsescada/</url>
-    </repository>
-  </repositories>
-  <profiles>
-    <profile>
-      <id>integration</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      <repositories>
-        <repository>
-          <id>eclipse.scada.external</id>
-          <url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.external-master/lastSuccessfulBuild/artifact/output/p2</url>
-          <layout>p2</layout>
-        </repository>
-        <repository>
-          <id>eclipse.scada.utils</id>
-          <url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.utils-master/lastSuccessfulBuild/artifact/output/p2</url>
-          <layout>p2</layout>
-        </repository>
-        <repository>
-          <id>eclipse.scada.base</id>
-          <url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.base-master/lastSuccessfulBuild/artifact/output/p2</url>
-          <layout>p2</layout>
-        </repository>
-        <repository>
-          <id>eclipse.scada.protocols</id>
-          <url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.protocols-master/lastSuccessfulBuild/artifact/output/p2</url>
-          <layout>p2</layout>
-        </repository>
-        <repository>
-          <id>eclipse.scada.core</id>
-          <url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.core-master/lastSuccessfulBuild/artifact/output/p2</url>
-          <layout>p2</layout>
-        </repository>
-        <repository>
-          <id>eclipse.scada.chart</id>
-          <url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.chart-master/lastSuccessfulBuild/artifact/output/p2</url>
-          <layout>p2</layout>
-        </repository>
-        <repository>
-          <id>eclipse.scada.hmi</id>
-          <url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.hmi-master/lastSuccessfulBuild/artifact/output/p2</url>
-          <layout>p2</layout>
-        </repository>
-        <repository>
-          <id>eclipse.scada.ide</id>
-          <url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.ide-master/lastSuccessfulBuild/artifact/output/p2</url>
-          <layout>p2</layout>
-        </repository>
-      </repositories>
-    </profile>
-  </profiles>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.eclipse.scada.releng</groupId>
+		<artifactId>superParent</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>org.eclipse.scada.deploy</groupId>
+	<artifactId>org.eclipse.scada.deploy-parent</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<tycho.scmUrl>scm:git:git://git.eclipse.org/gitroot/scada/org.eclipse.scada.deploy.git</tycho.scmUrl>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>repo.eclipse.scada.org</id>
+			<name>Eclipse SCADA Repository</name>
+			<url>https://repo.eclipse.org/content/groups/eclipsescada/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<profiles>
+		<profile>
+			<id>integration</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>eclipse.scada.external</id>
+					<layout>p2</layout>
+					<url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.external-master/lastSuccessfulBuild/artifact/output/p2</url>
+				</repository>
+				<repository>
+					<id>eclipse.scada.utils</id>
+					<layout>p2</layout>
+					<url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.utils-master/lastSuccessfulBuild/artifact/output/p2</url>
+				</repository>
+				<repository>
+					<id>eclipse.scada.base</id>
+					<layout>p2</layout>
+					<url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.base-master/lastSuccessfulBuild/artifact/output/p2</url>
+				</repository>
+				<repository>
+					<id>eclipse.scada.protocols</id>
+					<layout>p2</layout>
+					<url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.protocols-master/lastSuccessfulBuild/artifact/output/p2</url>
+				</repository>
+				<repository>
+					<id>eclipse.scada.core</id>
+					<layout>p2</layout>
+					<url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.core-master/lastSuccessfulBuild/artifact/output/p2</url>
+				</repository>
+				<repository>
+					<id>eclipse.scada.chart</id>
+					<layout>p2</layout>
+					<url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.chart-master/lastSuccessfulBuild/artifact/output/p2</url>
+				</repository>
+				<repository>
+					<id>eclipse.scada.hmi</id>
+					<layout>p2</layout>
+					<url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.hmi-master/lastSuccessfulBuild/artifact/output/p2</url>
+				</repository>
+				<repository>
+					<id>eclipse.scada.ide</id>
+					<layout>p2</layout>
+					<url>https://hudson.eclipse.org/scada/job/org.eclipse.scada.ide-master/lastSuccessfulBuild/artifact/output/p2</url>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+
+	<modules>
+		<module>../org.eclipse.scada.deploy-p2</module> <!-- holds the p2 repository -->
+
+		<module>../org.eclipse.scada.deploy.feature</module>
+		<module>../org.eclipse.scada.deploy.sdk.feature</module>
+		<module>../org.eclipse.scada.deploy.console.feature</module>
+		<module>../org.eclipse.scada.deploy.logback.feature</module>
+		
+		<module>../org.eclipse.scada.deploy.packages</module>
+	</modules>
+
 </project>
