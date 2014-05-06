@@ -5,12 +5,12 @@
   <parent>
     <groupId>org.eclipse.scada.deploy</groupId>
     <artifactId>org.eclipse.scada.deploy.packages.common</artifactId>
-    <version>0.1.0.RC2</version>
+    <version>0.1.0</version>
     <relativePath>../../common</relativePath>
   </parent>
   <groupId>org.eclipse.scada.deploy</groupId>
   <artifactId>org.eclipse.scada-centos6</artifactId>
-  <version>0.1.0.RC2</version>
+  <version>0.1.0</version>
   <packaging>pom</packaging>
   <description>Eclipse SCADA base package</description>
   <properties>

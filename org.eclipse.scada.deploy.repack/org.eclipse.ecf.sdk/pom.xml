@@ -5,12 +5,12 @@
   <parent>
     <groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
     <artifactId>org.eclipse.scada.deploy.repack-base.unpack</artifactId>
-    <version>0.1.0.RC2</version>
+    <version>0.1.0</version>
     <relativePath>../base.unpack.xml</relativePath>
   </parent>
   <groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
   <artifactId>org.eclipse.ecf.sdk-3.6.1</artifactId>
-  <version>0.1.0.RC2</version>
+  <version>0.1.0</version>
   <packaging>pom</packaging>
   <properties>
     <srcFile>org.eclipse.ecf.sdk_3.6.1.v20130605-1748.zip</srcFile>

@@ -5,12 +5,12 @@
   <parent>
     <groupId>org.eclipse.scada.deploy</groupId>
     <artifactId>org.eclipse.scada.deploy.packages</artifactId>
-    <version>0.1.0.RC2</version>
+    <version>0.1.0</version>
     <relativePath>..</relativePath>
   </parent>
   <groupId>org.eclipse.scada.deploy.package-incubation</groupId>
   <artifactId>gather</artifactId>
-  <version>0.1.0.RC2</version>
+  <version>0.1.0</version>
   <packaging>pom</packaging>
   <profiles>
     <profile>

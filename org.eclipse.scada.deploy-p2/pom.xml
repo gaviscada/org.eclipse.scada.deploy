@@ -5,12 +5,12 @@
   <parent>
     <groupId>org.eclipse.scada.deploy</groupId>
     <artifactId>org.eclipse.scada.deploy-parent</artifactId>
-    <version>0.1.0.RC2</version>
+    <version>0.1.0</version>
     <relativePath>../org.eclipse.scada.deploy-parent</relativePath>
   </parent>
   <groupId>org.eclipse.scada.deploy</groupId>
   <artifactId>org.eclipse.scada.deploy.p2-incubation</artifactId>
-  <version>0.1.0.RC2</version>
+  <version>0.1.0</version>
   <packaging>eclipse-repository</packaging>
   <profiles>
     <profile>

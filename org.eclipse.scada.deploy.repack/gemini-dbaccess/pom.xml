@@ -5,12 +5,12 @@
   <parent>
     <groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
     <artifactId>org.eclipse.scada.deploy.repack-base.unpack</artifactId>
-    <version>0.1.0.RC2</version>
+    <version>0.1.0</version>
     <relativePath>../base.unpack.xml</relativePath>
   </parent>
   <groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
   <artifactId>gemini-dbaccess-1.1.0.RELEASE</artifactId>
-  <version>0.1.0.RC2</version>
+  <version>0.1.0</version>
   <packaging>pom</packaging>
   <properties>
     <srcFile>gemini-dbaccess-1.1.0.RELEASE-updates.zip</srcFile>

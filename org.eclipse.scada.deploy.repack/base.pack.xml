@@ -5,12 +5,12 @@
   <parent>
     <groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
     <artifactId>org.eclipse.scada.deploy.repack-base</artifactId>
-    <version>0.1.0.RC2</version>
+    <version>0.1.0</version>
     <relativePath>base.xml</relativePath>
   </parent>
   <groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
   <artifactId>org.eclipse.scada.deploy.repack-base.pack</artifactId>
-  <version>0.1.0.RC2</version>
+  <version>0.1.0</version>
   <packaging>pom</packaging>
   <build>
     <plugins>
