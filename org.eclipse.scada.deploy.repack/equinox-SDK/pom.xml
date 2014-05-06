@@ -5,12 +5,12 @@
   <parent>
     <groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
     <artifactId>org.eclipse.scada.deploy.repack-base.pack</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <relativePath>../base.pack.xml</relativePath>
   </parent>
   <groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
   <artifactId>equinox-SDK-R-KeplerSR2-201402211700</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <packaging>pom</packaging>
   <properties>
     <srcFile>equinox-SDK-KeplerSR2.zip</srcFile>
