@@ -10,7 +10,7 @@
   </parent>
   <groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
   <artifactId>org.eclipse.scada.deploy.repack-base.pack</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <packaging>pom</packaging>
   <build>
     <plugins>
@@ -83,6 +83,7 @@
                   <mappings>
                     <mapping>
                       <directory>/usr/share/eclipsescada/p2</directory>
+                      <directoryIncluded>false</directoryIncluded>
                       <filemode>0644</filemode>
                       <username>root</username>
                       <groupname>root</groupname>
