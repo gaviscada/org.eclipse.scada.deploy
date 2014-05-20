@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
 		<artifactId>org.eclipse.scada.deploy.repack-base.pack</artifactId>
-		<version>0.2.0-SNAPSHOT</version>
+		<version>0.2.0.M1</version>
 		<relativePath>../base.pack.xml</relativePath>
 	</parent>
 
@@ -16,6 +16,6 @@
 
 	<groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
 	<artifactId>rap-2.2.0-R-20131204-0942</artifactId>
-	<version>0.2.0-SNAPSHOT</version>
+	<version>0.2.0.M1</version>
 	<packaging>pom</packaging>
 </project>
