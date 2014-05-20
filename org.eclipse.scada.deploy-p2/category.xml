@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><site>
-   <feature id="org.eclipse.scada.deploy" url="features/org.eclipse.scada.deploy_0.1.0.v20140506-1600.jar" version="0.1.0.v20140506-1600"/>
-   <feature id="org.eclipse.scada.deploy.sdk" url="features/org.eclipse.scada.deploy.sdk_0.1.0.v20140506-1600.jar" version="0.1.0.v20140506-1600"/>
+   <feature id="org.eclipse.scada.deploy" url="features/org.eclipse.scada.deploy_0.1.0.v20140506-1700.jar" version="0.1.0.v20140506-1700"/>
+   <feature id="org.eclipse.scada.deploy.sdk" url="features/org.eclipse.scada.deploy.sdk_0.1.0.v20140506-1700.jar" version="0.1.0.v20140506-1700"/>
 </site>
