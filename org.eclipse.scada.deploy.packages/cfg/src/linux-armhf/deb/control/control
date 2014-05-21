@@ -2,8 +2,8 @@ Package: [[name]]
 Version: [[version]]
 Section: misc
 Priority: optional
-Architecture: all
+Architecture: armhf
 Maintainer: Jens Reimann <jens.reimann@ibh-systems.com>
-Description: Eclipse SCADA base package
+Description: [[description]]
 Distribution: development
-Depends: adduser, perl (>=5.0), org.eclipse.scada.configuration, jsvc
+Depends: oracle-java7-jdk
