@@ -46,6 +46,7 @@
 										<path>/usr/share/eclipsescada</path>
 										<path>/var/log/eclipsescada</path>
 										<path>/usr/share/perl5/EclipseSCADA</path>
+										<path>/var/run/eclipsescada</path>
 									</paths>
 								</data>
 								<data>
