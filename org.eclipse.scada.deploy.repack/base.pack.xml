@@ -57,6 +57,7 @@
 									<goal>jdeb</goal>
 								</goals>
 								<configuration>
+									<skipPOMs>false</skipPOMs>
 									<dataSet>
 										<data>
 											<src>${project.build.directory}/downloads/${srcFile}</src>
@@ -95,6 +96,8 @@
 							<distribution>Eclipse SCADA %{version} (Incubation)</distribution>
 							<group>Application/Misc</group>
 							<changelogFile>rpm/changelog</changelogFile>
+							<version>${unqualifiedVersion}</version>
+							<release>${maven.build.timestamp}</release>
 
 							<defineStatements>
 								<!-- <defineStatement>_unpackaged_files_terminate_build 0</defineStatement> -->

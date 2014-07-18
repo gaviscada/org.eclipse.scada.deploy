@@ -61,6 +61,7 @@
 									<goal>jdeb</goal>
 								</goals>
 								<configuration>
+									<skipPOMs>false</skipPOMs>
 									<dataSet>
 										<data>
 											<src>${project.build.directory}/unpack/${project.artifactId}</src>
@@ -109,6 +110,9 @@
 							<distribution>Eclipse SCADA %{version} (Incubation)</distribution>
 							<group>Application/Misc</group>
 							<changelogFile>rpm/changelog</changelogFile>
+							<version>${unqualifiedVersion}</version>
+							<release>${maven.build.timestamp}</release>
+							
 							<mappings>
 							</mappings>
 						</configuration>
