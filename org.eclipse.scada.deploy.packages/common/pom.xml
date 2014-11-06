@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.eclipse.scada.deploy</groupId>
 		<artifactId>org.eclipse.scada.deploy.packages</artifactId>
-		<version>0.2.0.M9</version>
+		<version>0.2.0.M10</version>
 		<relativePath>..</relativePath>
 	</parent>
 	
 	<groupId>org.eclipse.scada.deploy</groupId>
 	<artifactId>org.eclipse.scada.deploy.packages.common</artifactId>
-	<version>0.2.0.M9</version>
+	<version>0.2.0.M10</version>
 	<packaging>pom</packaging>
 
 	<organization>
