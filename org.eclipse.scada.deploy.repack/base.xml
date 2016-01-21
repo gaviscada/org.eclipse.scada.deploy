@@ -25,6 +25,7 @@
 		<!-- base is: http://download.eclipse.org -->
 		<!-- mirror: http://www.eclipse.org/downloads/download.php?r=1&amp;file= -->
 		<eclipse.download.root>http://download.eclipse.org</eclipse.download.root>
+		<eclipse.archive.root>http://archive.eclipse.org</eclipse.archive.root>
 	</properties>
 
 	<repositories>
