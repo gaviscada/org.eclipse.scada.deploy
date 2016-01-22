@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
 		<artifactId>org.eclipse.scada.deploy.repack-parent</artifactId>
-		<version>0.2.2.RC1</version>
+		<version>0.2.2.RC2</version>
 		<relativePath>..</relativePath>
 	</parent>
 
 	<groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
 	<artifactId>gather</artifactId>
-	<version>0.2.2.RC1</version>
+	<version>0.2.2.RC2</version>
 	<packaging>pom</packaging>
 
 	<profiles>

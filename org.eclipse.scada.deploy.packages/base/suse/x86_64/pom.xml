@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.eclipse.scada.deploy</groupId>
 		<artifactId>org.eclipse.scada-suse</artifactId>
-		<version>0.2.2.RC1</version>
+		<version>0.2.2.RC2</version>
 		<relativePath>..</relativePath>
 	</parent>
 
