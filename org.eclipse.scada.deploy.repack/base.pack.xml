@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
 		<artifactId>org.eclipse.scada.deploy.repack-base</artifactId>
-		<version>0.3.0.M8</version>
+		<version>0.3.0.M9</version>
 		<relativePath>base.xml</relativePath>
 	</parent>
 	
 	<groupId>org.eclipse.scada.deploy.repack-incubation</groupId>
 	<artifactId>org.eclipse.scada.deploy.repack-base.pack</artifactId>
-	<version>0.3.0.M8</version>
+	<version>0.3.0.M9</version>
 	<packaging>pom</packaging>
 	
 	<build>
