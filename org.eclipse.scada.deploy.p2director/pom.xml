@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>org.eclipse.scada.releng</groupId>
 		<artifactId>superParent</artifactId>
-		<version>0.4.0.M1</version>
+		<version>0.4.0.M2</version>
 	</parent>
 
 	<groupId>org.eclipse.scada.deploy</groupId>
 	<artifactId>org.eclipse.scada.deploy.p2director-incubation</artifactId>
-	<version>0.4.0.M1</version>
+	<version>0.4.0.M2</version>
 	<packaging>eclipse-repository</packaging>
 	
 	<organization>
